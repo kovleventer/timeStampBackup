@@ -1,14 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:dep="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
   <identifier value="extensions.timeStampBackup"/>
-  <version value="1.1.2"/>
+  <version value="1.1.4"/>
   <platform value="all" />
   <registration>
     <simple-license accept-by="admin" default-license-id="ID0" suppress-on-update="true" >
       <license-text xlink:href="LICENSE" lang="en" license-id="ID0" />
       <license-text xlink:href="LICENSE" lang="en-US" />
-      <license-text xlink:href="LICENC_HU" lang="hu" />
-      <license-text xlink:href="LIZENZ_DE" lang="de" />
+      <license-text xlink:href="LICENSE_HU" lang="hu" />
+      <license-text xlink:href="LICENSE_DE" lang="de" />
+      <license-text xlink:href="LICENSE_IT" lang="it" />
+      <license-text xlink:href="LICENSE_ES" lang="es" />
+      <license-text xlink:href="LICENSE_RU" lang="ru" />
     </simple-license>
   </registration>
   <publisher>
@@ -24,5 +27,8 @@
     <src xlink:href="pkg-desc/pkg-description.en" lang="en" />
     <src xlink:href="pkg-desc/pkg-description.hu" lang="hu" />
     <src xlink:href="pkg-desc/pkg-description.de" lang="de" />
+    <src xlink:href="pkg-desc/pkg-description.it" lang="it" />
+    <src xlink:href="pkg-desc/pkg-description.es" lang="es" />
+    <src xlink:href="pkg-desc/pkg-description.ru" lang="ru" />
   </extension-description>
 </description>

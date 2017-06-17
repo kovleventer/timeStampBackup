@@ -18,7 +18,10 @@
             <prop oor:name="Title" oor:type="xs:string">
               <value xml:lang="en">Save and Timestamp-backup</value>
               <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern und Zeitstempelspeichern</value>              
+              <value xml:lang="de">Speichern und Zeitstempelspeichern</value> 
+              <value xml:lang="it">Salva e archivio con date e ora</value> 
+              <value xml:lang="es">Guardar y archivar con fecha y hora</value>
+              <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>             
             </prop>
             <prop oor:name="URL" oor:type="xs:string">
               <value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
@@ -32,7 +35,7 @@
     </node>
   </node>
   <node oor:name="OfficeToolbarMerging">
-    <node oor:name="StarXpert_SecurityBackup.ToolbarEntry" oor:op="replace">
+    <node oor:name="TimeStampBackup.ToolbarEntry" oor:op="replace">
       <node oor:name="T1" oor:op="replace">
         <prop oor:name="MergeToolBar">
           <value>standardbar</value>
@@ -60,7 +63,10 @@
             <prop oor:name="Title" oor:type="xs:string">
               <value xml:lang="en">Save and Timestamp-backup</value>
               <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern und Zeitstempelspeichern</value>  
+              <value xml:lang="de">Speichern und Zeitstempelspeichern</value>
+              <value xml:lang="it">Salva e archivio con date e ora</value> 
+              <value xml:lang="es">Guardar y archivar con fecha y hora</value>
+              <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
             </prop>
             <prop oor:name="Target" oor:type="xs:string">
               <value>_self</value>

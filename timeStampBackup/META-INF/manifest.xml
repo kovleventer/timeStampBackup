@@ -6,6 +6,9 @@
   <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.en" manifest:media-type="application/vnd.sun.star.package-bundle-description"/>
   <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.hu" manifest:media-type="application/vnd.sun.star.package-bundle-description;locale=hu"/>
   <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.de" manifest:media-type="application/vnd.sun.star.package-bundle-description;locale=en"/>
+  <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.it" manifest:media-type="application/vnd.sun.star.package-bundle-description;locale=it"/>
+  <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.es" manifest:media-type="application/vnd.sun.star.package-bundle-description;locale=es"/>
+  <manifest:file-entry manifest:full-path="pkg-desc/pkg-description.ru" manifest:media-type="application/vnd.sun.star.package-bundle-description;locale=ru"/>
   <manifest:file-entry manifest:full-path="Addons.xcu" manifest:media-type="application/vnd.sun.star.configuration-data"/>
   <manifest:file-entry manifest:full-path="Office/UI/CalcWindowState.xcu" manifest:media-type="application/vnd.sun.star.configuration-data"/>
   <manifest:file-entry manifest:full-path="Office/UI/ImpressWindowState.xcu" manifest:media-type="application/vnd.sun.star.configuration-data"/>

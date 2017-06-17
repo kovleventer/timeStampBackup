@@ -19,3 +19,6 @@ http://flowcont.hu/LO_oxt_store/
 
 This extension under licenced in the GPL v3 licence.
 
+Original creator: Kovács Tibor
+
+Project maintainer: kovlev

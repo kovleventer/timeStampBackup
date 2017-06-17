@@ -1,0 +1,14 @@
+Questa estensione è stato creato per l'LibreOffice e OpenOffice e consente agli utenti di effettuare normali Salva e per creare un timbro datario copia di backup del documento effettivo in una sola volta.
+Il file Archiv con un nome timbrato tempo sarà collocato nella directory di backup data in Strumenti - Opzioni - Open/LibreOffice - Percorsi
+E 'meglio per regolare il percorso della directory di backup in un luogo facile da usare.
+
+L'interno ha una voce di menu nel menu File, e l'icona della barra degli strumenti nella barra degli strumenti standard, e lavora in applicazioni elencate di seguito:
+Scrittore, WriterWeb, WriterMaster; Calc, Draw, Impress, Math applicazioni.
+
+È possibile scaricare l'ultima versione di questa estensione per LibreOffice
+e per OpenOffice dalla pagina:
+http://flowcont.hu/LO_oxt_store/
+
+Questa estensione rilasciato sotto licenza GPL v3.
+
+Tibor Kovács - Flow-Cont Ltd.

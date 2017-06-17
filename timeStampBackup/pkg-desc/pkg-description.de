@@ -1,19 +1,14 @@
-Diese Erweiterung erstellt für die Libreoffice und OpenOffice ermöglicht 
-die Speichern normaler Benutzer zu machen und eine Sicherungskopie 
-der Zeitstempel zu erstellen Ist Dokument auf einmal.
-Die Archivdatei mit dem Zeitstempel wird in den Dateinamen platziert
-Backup-Verzeichnis in der angegebenen
-Extras - Optionen - Open/LibreOffice - Pfade
-Es ist besser, den Weg des Sicherungsverzeichnis an den Benutzer 
-anzupassen freundlicher Ort.
+Diese Erweiterung wurde für LibreOffice und OpenOffice erstellt und ermöglicht es den Benutzern, normale Save zu erstellen und eine TimeStamped Backup-Kopie des aktuellen Dokuments auf einmal zu erstellen.
+Die Archivdatei mit einem zeitgestempelten Dateinamen wird in das Backup-Verzeichnis in den Tools - Optionen - Open / LibreOffice - Pfade platziert
+Es ist besser, den Pfad des Backup-Verzeichnisses an einen benutzerfreundlichen Ort anzupassen.
 
-Die Erweiterung hat einen Menüpunkt im Menü Datei, und ein Symbol 
-in der Standard-Symbolleiste, und es funktioniert in den Anwendungen 
-im Folgenden aufgelistet:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress und Math Anwendungen.
+Die Erweiterung verfügt über einen Menüpunkt im Menü Datei und ein Symbolleistensymbol in der Symbolleiste Standard, und es funktioniert in den folgenden Anwendungen:
+Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Mathematische Anwendungen.
 
-Sie können die neueste Version dieser Erweiterung für LibreOffice 
-herunterladen und für OpenOffice von der Seite:
-http://flowcont.hu/LO_oxt_store/
+Sie können die neueste Version dieser Erweiterung für LibreOffice herunterladen
+Und für OpenOffice von der Seite:
+Http://flowcont.hu/LO_oxt_store/
 
-Diese Erweiterung wird unter der Lizenz GPL v3.
+Diese Erweiterung lizenziert unter der GPL v3 Lizenz.
+
+Tibor Kovács - Flow-Cont Ltd.
