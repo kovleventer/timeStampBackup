@@ -1,0 +1,16 @@
+Ez a LibreOffice/OpenOffice kiterjesztés lehetővé teszi a felhasználók 
+számára, hogy az aktuális (URL-lel már rendelkező) fájlok esetén 
+egy kattintással normál mentést és időbélyeggel történő archiválást 
+végezzennek. Az archiválás a Beállításokban megadott Backup könyvtárba 
+történik. Ennek az elérési útvonalát célszerű könnyebben elérhető helyre 
+beállítani az alapértelmezett helyett.
+
+A kiterjesztés menüponttal és eszköztárikonnal rendelkezik és működik 
+a Writer, WriterWeb alkalmazásban (fődokumentumokal is); 
+valamint a Calc, a Draw, az Impress és a Math applikációkban.
+
+A kiterjesztés legújabb változata letölthető a LibreOffice-hoz és 
+az OpenOffice-hoz a következő oldalról: 
+http://flowcont.hu/LO_oxt_store/
+
+Erre a kiterjesztésre a GPL v3 licenc vonatkozik.

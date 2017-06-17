@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:dep="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <identifier value="extensions.timeStampBackup"/>
+  <version value="1.1.2"/>
+  <platform value="all" />
+  <registration>
+    <simple-license accept-by="admin" default-license-id="ID0" suppress-on-update="true" >
+      <license-text xlink:href="LICENSE" lang="en" license-id="ID0" />
+      <license-text xlink:href="LICENSE" lang="en-US" />
+      <license-text xlink:href="LICENC_HU" lang="hu" />
+      <license-text xlink:href="LIZENZ_DE" lang="de" />
+    </simple-license>
+  </registration>
+  <publisher>
+    <name xlink:href="http://www.flowcont.hu/LO_oxt_store/">Flow-Cont Ltd.</name>
+  </publisher>
+  <display-name>
+    <name>TimeStampBackup</name>
+  </display-name>
+  <icon>
+    <default xlink:href="icons/timeStampBackup.png" />
+  </icon>
+  <extension-description>
+    <src xlink:href="pkg-desc/pkg-description.en" lang="en" />
+    <src xlink:href="pkg-desc/pkg-description.hu" lang="hu" />
+    <src xlink:href="pkg-desc/pkg-description.de" lang="de" />
+  </extension-description>
+</description>
