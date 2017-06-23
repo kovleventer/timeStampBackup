@@ -21,4 +21,6 @@ This extension under licenced in the GPL v3 licence.
 
 Original creator: Kovács Tibor
 
-Project maintainer: kovlev
+Project maintainer: kovlev, however any contribution is appreciated
+
+Relevant OOo forum thread: https://forum.openoffice.org/en/forum/viewtopic.php?f=47&t=86742
