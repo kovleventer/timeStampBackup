@@ -1,0 +1,13 @@
+Conçue pour LibreOffice et OpenOffice, cette extension crée une archive horodatée du document courant en même temps qu'elle l'enregistre normalement.
+L'archive horodatée est enregistrée dans le répertoire de sauvegarde par défaut (Outils -> Options -> Open|LibreOffice -> Chemins).
+Il est recommandé de définir un répertoire de sauvegarde d'accès aisé.
+
+L'extension est accessible depuis le menu Fichier et depuis la barre d'outils Standard. Elle est disponible pour les modules :
+Writer, WriterWeb, WriterMaster, Calc, Draw, Impress et Math.
+
+La dernière version de l'extension est disponible au téléchagement à l'adresse :
+http://flowcont.hu/LO_oxt_store
+
+La présente extension est sous licence GPL v3.
+
+Tibor Kovács  - Flow-Cont Ltd.
