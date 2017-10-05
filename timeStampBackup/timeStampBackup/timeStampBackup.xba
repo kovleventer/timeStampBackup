@@ -63,7 +63,8 @@ Sub timeStampBackup
 				MsgBox(&quot;В этом документе не какой-либо URL (есть не правильное имя файла и / или путь) еще.&quot; &amp; Chr(10) &amp; &quot;Документ не будет архивировать. Сохраните документ в первую очередь.&quot;,16,&quot;Внимание:&quot;)
 			case &quot;fr&quot;
 				MsgBox(&quot;Le document ne dispose encore d&apos;aucune url (nom de fichier invalide).&quot; &amp; Chr(10) &amp; &quot;Le document ne sera pas archivé. Effectuez un premier enregistrement normal.&quot;,16,&quot;Attention :&quot;)
-
+                        case &quot;nl&quot;, &quot;nl&quot;
+				MsgBox(&quot;Het document heeft geen URL (heeft nog geen geldige bestandsnaam en/of pad).&quot; &amp; Chr(10) &amp; &quot;Het document zal niet worden gearchiveerd. Sla uw document eerst op.&quot;,16,&quot;Attentie:&quot;)
 			case else
 				MsgBox(&quot;The document have not any URL (have not a valid file name and / or path) yet.&quot; &amp; Chr(10) &amp; &quot;The document will not be archived. Save your document first.&quot;,16,&quot;Error:&quot;)
 
