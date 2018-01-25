@@ -3,7 +3,7 @@ The archive file with a time stamped filename will placed into the Backup direct
 It is better to adjust the path of the Backup directory to a user friendly place.
 
 The extension has a menu item in the File menu, and a toolbar icon in the Standard toolbar, and it works in the applications listed below:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Math applications.
+Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, Math applications.
 
 You can download the latest version of this extension for LibreOffice 
 and for OpenOffice from the page:

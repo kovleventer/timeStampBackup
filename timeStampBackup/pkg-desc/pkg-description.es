@@ -3,7 +3,7 @@ El archivo archiv con un nombre de archivo con hora marcada se colocará en el d
 Es mejor ajustar la ruta del directorio de copia de seguridad a un lugar amigable para el usuario.
 
 La extensión tiene un elemento de menú en el menú Archivo y un icono de barra de herramientas en la barra de herramientas Estándar, y funciona en las aplicaciones que se enumeran a continuación:
-Escritor, EscritorWeb, EscritorMaster; Calc, Draw, Impress, Aplicaciones matemáticas.
+Escritor, EscritorWeb, EscritorMaster; Calc, Draw, Impress, Base, Aplicaciones matemáticas.
 
 Puede descargar la última versión de esta extensión para LibreOffice
 Y para OpenOffice desde la página:

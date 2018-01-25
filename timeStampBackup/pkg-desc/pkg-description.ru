@@ -3,7 +3,7 @@
 Лучше настроить путь к резервной копии каталога к удобным для пользователя месте.
 
 Расширение имеет пункт меню в меню Файл, и значок в стандартной панели инструментов, и он работает в приложениях, перечисленных ниже:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, приложения Math.
+Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, приложения Math.
 
 Вы можете загрузить последнюю версию этого расширения для LibreOffice и OpenOffice со страницы:
 http://flowcont.hu/LO_oxt_store/

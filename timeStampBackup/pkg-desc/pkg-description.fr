@@ -3,7 +3,7 @@ L'archive horodatée est enregistrée dans le répertoire de sauvegarde par déf
 Il est recommandé de définir un répertoire de sauvegarde d'accès aisé.
 
 L'extension est accessible depuis le menu Fichier et depuis la barre d'outils Standard. Elle est disponible pour les modules :
-Writer, WriterWeb, WriterMaster, Calc, Draw, Impress et Math.
+Writer, WriterWeb, WriterMaster, Calc, Draw, Impress, Base et Math.
 
 La dernière version de l'extension est disponible au téléchagement à l'adresse :
 http://flowcont.hu/LO_oxt_store

@@ -3,7 +3,7 @@ Het gearchiveerde bestand met een bestandsnaam met een tijdstempel zal wordne ge
 Het is beter om de map Backup te plaatsen op een meer gebruikersvriendelijker plaats.
 
 De extensie heeft een menuitem in het menu Bestand en een pictogram voor de werkbalk op de werkbalk Standaard, en het werkt in de toepassingen die hieronder zijn vermeld:
-Toepassingen Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Math.
+Toepassingen Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, Math.
 
 U kunt de laatste versie van deze extensie voor Libreoffice
 en voor OpenOffice downloaden vanaf de pagina:

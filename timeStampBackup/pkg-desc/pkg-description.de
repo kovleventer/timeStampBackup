@@ -3,7 +3,7 @@ Die Archivdatei mit einem zeitgestempelten Dateinamen wird in das Backup-Verzeic
 Es ist besser, den Pfad des Backup-Verzeichnisses an einen benutzerfreundlichen Ort anzupassen.
 
 Die Erweiterung verfügt über einen Menüpunkt im Menü Datei und ein Symbolleistensymbol in der Symbolleiste Standard, und es funktioniert in den folgenden Anwendungen:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Mathematische Anwendungen.
+Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, Mathematische Anwendungen.
 
 Sie können die neueste Version dieser Erweiterung für LibreOffice herunterladen
 Und für OpenOffice von der Seite:
