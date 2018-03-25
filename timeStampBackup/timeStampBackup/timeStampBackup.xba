@@ -30,17 +30,20 @@ Sub timeStampBackup
  Dim sTimeStamp as string
  Dim sLocale as string
  Dim oDoc as object
+ Dim dirname as string
  
 	If (Not GlobalScope.BasicLibraries.isLibraryLoaded(&quot;Tools&quot;)) Then
 		GlobalScope.BasicLibraries.LoadLibrary(&quot;Tools&quot;)
 	End If
-	sTimeStamp = &quot;_&quot; &amp; Format(Year(Now), &quot;0000&quot;) &amp; Format(Month(Now), &quot;00&quot;) &amp; Format(Day(Now), &quot;00&quot;) &amp; &quot;_&quot; &amp; _
+	sTimeStamp = &quot;___&quot; &amp; Format(Year(Now), &quot;0000&quot;) &amp; Format(Month(Now), &quot;00&quot;) &amp; Format(Day(Now), &quot;00&quot;) &amp; &quot;_&quot; &amp; _
                        Format(Hour(Now), &quot;00&quot;) &amp; Format(Minute(Now), &quot;00&quot;) &amp; Format(Second(Now), &quot;00&quot;)
 	oDoc = Thiscomponent	
 	
 	If oDoc.hasLocation() then
 		sDocURL = oDoc.getURL()
+		dirname=ReplaceString(DirectoryNameoutofPath(sDocURL, &quot;/&quot;),&quot;_&quot;,&quot;:&quot;)
 		sBackupURL = CreateUnoService(&quot;com.sun.star.util.PathSettings&quot;).Backup &amp; &quot;/&quot; &amp; _
+		ReplaceString(RIGHT(dirname,LEN(dirname)-8),&quot;_&quot;,&quot;/&quot;) &amp; &quot;___&quot; &amp; _
 		GetFileNameWithoutExtension(sDocURL, &quot;/&quot;) &amp; _
 		sTimeStamp() &amp; &quot;.&quot; &amp; _
 		GetFileNameExtension(sDocURL, &quot;/&quot;)		
