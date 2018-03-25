@@ -53,11 +53,11 @@ Sub timeStampBackup
 		sLocale = GetRegistryKeyContent(&quot;org.openoffice.Setup/L10N&quot;,FALSE).getByName(&quot;ooLocale&quot;)
 		Select case sLocale
 			case &quot;en-GB&quot;, &quot;en-US&quot;
-				MsgBox(&quot;The document have not any URL (have not a valid file name and / or path) yet.&quot; &amp; Chr(10) &amp; &quot;The document will not be archived. Save your document first.&quot;,16,&quot;Attention:&quot;)
+				MsgBox(&quot;The document has not any URL (has not a valid file name and / or path) yet.&quot; &amp; Chr(10) &amp; &quot;The document will not be archived. Save your document first.&quot;,16,&quot;Attention:&quot;)
 			case &quot;hu&quot;
 				MsgBox(&quot;A dokumentum még nem rendelkezik fájlnévvel és/vagy elérési útvonallal!&quot; &amp; Chr(10) &amp; &quot;Az archiválás nem végrahajtható. Előbb mentsd el a dokumentumot!&quot;,16,&quot;Figyelem:&quot;)
 			case &quot;de&quot;
-				MsgBox(&quot;Das Dokument haben keine URL (keine gültige Dateinamen und / oder Pfad) noch.&quot; &amp; Chr(10) &amp; &quot;Das Dokument wird nicht archiviert. Speichern Sie zuerst das Dokument.&quot;,16,&quot;Achtung:&quot;)
+				MsgBox(&quot;Das Dokument hat noch keine URL (keinen gültigen Dateinamen und / oder Pfad).&quot; &amp; Chr(10) &amp; &quot;Das Dokument wird nicht archiviert. Speichern Sie zuerst das Dokument.&quot;,16,&quot;Achtung:&quot;)
 			case &quot;it&quot;
 				MsgBox(&quot;Il documento non ha alcun URL (non hanno un nome valido di file e / o percorso) ancora.&quot; &amp; Chr(10) &amp; &quot;Il documento non verrà archiviato. Salvare il documento prima.&quot;,16,&quot;Attenzione:&quot;)
 			case &quot;es&quot;

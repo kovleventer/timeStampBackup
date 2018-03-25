@@ -18,7 +18,7 @@
             <prop oor:name="Title" oor:type="xs:string">
               <value xml:lang="en">Save and Timestamp-backup</value>
               <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern und Zeitstempelspeichern</value> 
+              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value> 
               <value xml:lang="it">Salva e archivio con date e ora</value> 
               <value xml:lang="es">Guardar y archivar con fecha y hora</value>
               <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>             
@@ -64,7 +64,7 @@
             <prop oor:name="Title" oor:type="xs:string">
               <value xml:lang="en">Save and Timestamp-backup</value>
               <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern und Zeitstempelspeichern</value>
+              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
               <value xml:lang="it">Salva e archivio con date e ora</value> 
               <value xml:lang="es">Guardar y archivar con fecha y hora</value>
               <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
@@ -103,7 +103,7 @@
             <prop oor:name="Title" oor:type="xs:string">
               <value xml:lang="en">Save and Timestamp-backup</value>
               <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern und Zeitstempelspeichern</value>
+              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
               <value xml:lang="it">Salva e archivio con date e ora</value> 
               <value xml:lang="es">Guardar y archivar con fecha y hora</value>
               <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>

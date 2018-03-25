@@ -1,23 +1,25 @@
-# Timestamp Backup LibreOffice extension
+# Timestamp Backup LibreOffice Extension
 
-This extension created for the LibreOffice and OpenOffice enables the 
-user to make normal Save and to create a TimeStamped Backup copy of the 
-actual document at once. 
-The archiv file with a time stamped filename will placed into the 
-Backup directory given in the 
-Tools - Options - Open/LibreOffice - Paths
-It is better to adjust the path of the Backup directory to a user 
+This extension for LibreOffice and OpenOffice enables the 
+user to make a normal save and to additionally create a timestamped backup copy of the 
+document with just one click.
+
+The backup copy will be placed into the 
+backup directory set in `Tools - Options - Open/LibreOffice - Paths - Backups`
+
+It is recommended to adjust the path of the backup directory to a user 
 friendly place.
 
-The extension has a menu item in the File menu, and a toolbar icon 
-in the Standard toolbar, and it works in the applications listed below:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Math applications.
+The extension has a menu item in the `File` menu, and a toolbar icon 
+in the `standard` toolbar.
+
+It works in these applications: Writer, WriterWeb, WriterMaster, Calc, Draw, Impress, Math.
 
 You can download the latest version of this extension for LibreOffice 
-and for OpenOffice from the page:
+and for OpenOffice from this page:
 http://flowcont.hu/LO_oxt_store/
 
-This extension under licenced in the GPL v3 licence.
+License: GPL v3
 
 Original creator: Kovács Tibor
 
