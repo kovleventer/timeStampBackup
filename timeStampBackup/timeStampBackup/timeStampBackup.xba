@@ -40,7 +40,9 @@ Sub timeStampBackup
 	
 	If oDoc.hasLocation() then
 		sDocURL = oDoc.getURL()
+		dirname=DirectoryNameoutofPath(sDocURL, &quot;/&quot;)
 		sBackupURL = CreateUnoService(&quot;com.sun.star.util.PathSettings&quot;).Backup &amp; &quot;/&quot; &amp; _
+		ReplaceString(RIGHT(dirname,LEN(dirname)-8),&quot;_&quot;,&quot;/&quot;) &amp; &quot;___&quot; &amp; _   
 		GetFileNameWithoutExtension(sDocURL, &quot;/&quot;) &amp; _
 		sTimeStamp() &amp; &quot;.&quot; &amp; _
 		GetFileNameExtension(sDocURL, &quot;/&quot;)		
