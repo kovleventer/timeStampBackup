@@ -1,18 +1,12 @@
-Diese Erweiterung wurde für LibreOffice und OpenOffice erstellt und ermöglicht es dem Benutzer, 
-gleichzeitig die Datei zu speichern und eine Backup-Kopie mit Zeitspempel zu erstellen. 
+Diese Erweiterung wurde für LibreOffice und OpenOffice erstellt und ermöglicht es dem Benutzer, gleichzeitig die Datei zu speichern und eine Backup-Kopie mit Zeitspempel zu erstellen. 
 
-Diese Backup-Kopie wird in das unter Extras - Optionen - Open-/LibreOffice - Pfade - Backup
-eingestellte Verzeichnis gespeichert. Es wird empfohlen, das Backup-Verzeichnis auf einen
-benutzerfreundlicheren Ort umzustellen.
+Diese Backup-Kopie wird in das unter "Extras - Optionen - Open-/LibreOffice - Pfade - Backup" eingestellte Verzeichnis gespeichert. Es wird empfohlen, das Backup-Verzeichnis auf einen benutzerfreundlicheren Ort umzustellen.
 
-Die Erweiterung fügt einen Eintrag im Menü Datei und ein Symbol in der Symbolleiste Standard hinzu.
+Die Erweiterung fügt einen Eintrag im Menü "Datei" und ein Symbol in der Symbolleiste "Standard" hinzu.
 
-Die Erweiterung funktioniert in den folgenden Anwendungen:
-Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, Math
+Die Erweiterung funktioniert in den folgenden Anwendungen: Writer, WriterWeb, WriterMaster; Calc, Draw, Impress, Base, Math
 
-Sie können die neueste Version dieser Erweiterung für LibreOffice und OpenOffice 
-von dieser Seite herunterladen:
-Http://flowcont.hu/LO_oxt_store/
+Sie können die neueste Version dieser Erweiterung für LibreOffice und OpenOffice von dieser Seite herunterladen: Http://flowcont.hu/LO_oxt_store/
 
 Diese Erweiterung ist lizenziert unter der GPL v3.
 
