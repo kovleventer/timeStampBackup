@@ -26,3 +26,5 @@ Original creator: Kovács Tibor
 Project maintainer: kovlev, however any contribution is appreciated
 
 Relevant OOo forum thread: https://forum.openoffice.org/en/forum/viewtopic.php?f=47&t=86742
+
+LibreOffice extensions page: https://extensions.libreoffice.org/extensions/timestamp-backup
