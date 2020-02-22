@@ -40,15 +40,10 @@ Sub timeStampBackup
                        Format(Hour(Now), &quot;00&quot;) &amp; Format(Minute(Now), &quot;00&quot;) &amp; Format(Second(Now), &quot;00&quot;)
 	oDoc = Thiscomponent	
 	
-	If oDoc.hasLocation() then
-		&apos;Regular save
-      	oDoc.store()
-    else
-    	&apos;Pop up a save as dialog
-      	document   = ThisComponent.CurrentController.Frame
-      	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
-      	dispatcher.executeDispatch(document, &quot;.uno:Save&quot;, &quot;&quot;, 0, Array())
-    end if
+   	&apos;internal save command
+   	document   = ThisComponent.CurrentController.Frame
+   	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
+   	dispatcher.executeDispatch(document, &quot;.uno:Save&quot;, &quot;&quot;, 0, Array())
     
     If oDoc.hasLocation() then
     	&apos;In case the file save was unsuccessful
@@ -57,7 +52,7 @@ Sub timeStampBackup
    		GetFileNameWithoutExtension(sDocURL, &quot;/&quot;) &amp; _
    		sTimeStamp() &amp; &quot;.&quot; &amp; _
    		GetFileNameExtension(sDocURL, &quot;/&quot;)      
-   		oDoc.storeToURL(sBackupURL, array()) 
+   		FileCopy oDoc.URL, sBackupURL
    	end if
 	
 End sub
