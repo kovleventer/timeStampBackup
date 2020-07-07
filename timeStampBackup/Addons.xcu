@@ -1,121 +1,168 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
-<node oor:name="AddonUI">
-  <node oor:name="OfficeMenuBarMerging">
-    <node oor:name="TimeStampBackup.MenuEntry" oor:op="replace">
-      <node oor:name="N001" oor:op="replace">
-        <prop oor:name="MergeContext" oor:type="xs:string">
-          <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.formula.FormulaProperties,com.sun.star.text.WebDocument,com.sun.star.text.GlobalDocument,com.sun.star.sdb.OfficeDatabaseDocument</value>
-        </prop>
-        <prop oor:name="MergePoint" oor:type="xs:string">
-          <value>.uno:PickList\.uno:SaveAs</value>
-        </prop>
-        <prop oor:name="MergeCommand" oor:type="xs:string">
-          <value>AddAfter</value>
-        </prop>
-        <node oor:name="MenuItems">
-          <node oor:name="N002" oor:op="replace">
-            <prop oor:name="Title" oor:type="xs:string">
-              <value xml:lang="en">Save and Timestamp-backup</value>
-              <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value> 
-              <value xml:lang="it">Salva e archivio con date e ora</value> 
-              <value xml:lang="es">Guardar y archivar con fecha y hora</value>
-              <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>             
-              <value xml:lang="fr">Sauvegarde horodatée</value>             
-            </prop>
-            <prop oor:name="URL" oor:type="xs:string">
-              <value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
-            </prop>
-            <prop oor:name="Target" oor:type="xs:string">
-              <value>_self</value>
-            </prop>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node oor:name="OfficeToolbarMerging">
-    <node oor:name="TimeStampBackup.ToolbarEntry" oor:op="replace">
-      <node oor:name="T1" oor:op="replace">
-        <prop oor:name="MergeToolBar">
-          <value>standardbar</value>
-        </prop>
-        <prop oor:name="MergePoint">
-          <value>.uno:SaveAs</value>
-        </prop>
-        <prop oor:name="MergeCommand">
-          <value>AddAfter</value>
-        </prop>
-        <prop oor:name="MergeFallback">
-          <value>AddLast</value>
-        </prop>
-        <node oor:name="ToolBarItems">
-          <node oor:name="m1" oor:op="replace">
-            <prop oor:name="Context" oor:type="xs:string">
-              <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.formula.FormulaProperties,com.sun.star.text.WebDocument,com.sun.star.text.GlobalDocument</value>
-            </prop>
-            <prop oor:name="URL" oor:type="xs:string">
-              <value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
-            </prop>
-            <prop oor:name="ImageIdentifier" oor:type="xs:string">
-              <value>%origin%/icons/timeStampBackup</value>
-            </prop>
-            <prop oor:name="Title" oor:type="xs:string">
-              <value xml:lang="en">Save and Timestamp-backup</value>
-              <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
-              <value xml:lang="it">Salva e archivio con date e ora</value> 
-              <value xml:lang="es">Guardar y archivar con fecha y hora</value>
-              <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
-              <value xml:lang="fr">Sauvegarde horodatée</value>
-            </prop>
-            <prop oor:name="Target" oor:type="xs:string">
-              <value>_self</value>
-            </prop>
-          </node>
-        </node>
-      </node>
-      <node oor:name="T2" oor:op="replace">
-        <prop oor:name="MergeToolBar">
-          <value>toolbar</value>
-        </prop>
-        <prop oor:name="MergePoint">
-          <value>.uno:Save</value>
-        </prop>
-        <prop oor:name="MergeCommand">
-          <value>AddAfter</value>
-        </prop>
-        <prop oor:name="MergeFallback">
-          <value>AddLast</value>
-        </prop>
-        <node oor:name="ToolBarItems">
-          <node oor:name="m2" oor:op="replace">
-            <prop oor:name="Context" oor:type="xs:string">
-              <value>com.sun.star.sdb.OfficeDatabaseDocument</value>
-            </prop>
-            <prop oor:name="URL" oor:type="xs:string">
-              <value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
-            </prop>
-            <prop oor:name="ImageIdentifier" oor:type="xs:string">
-              <value>%origin%/icons/timeStampBackup</value>
-            </prop>
-            <prop oor:name="Title" oor:type="xs:string">
-              <value xml:lang="en">Save and Timestamp-backup</value>
-              <value xml:lang="hu">Mentés és időbélyeges archiválás</value>
-              <value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
-              <value xml:lang="it">Salva e archivio con date e ora</value> 
-              <value xml:lang="es">Guardar y archivar con fecha y hora</value>
-              <value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
-              <value xml:lang="fr">Sauvegarde horodatée</value>
-            </prop>
-            <prop oor:name="Target" oor:type="xs:string">
-              <value>_self</value>
-            </prop>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-</node>
+	<node oor:name="AddonUI">
+		<node oor:name="OfficeMenuBarMerging">
+			<node oor:name="TimeStampBackup.MenuEntry" oor:op="replace">
+				<node oor:name="N001" oor:op="replace">
+					<prop oor:name="MergeContext" oor:type="xs:string">
+						<value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.formula.FormulaProperties,com.sun.star.text.WebDocument,com.sun.star.text.GlobalDocument,com.sun.star.sdb.OfficeDatabaseDocument</value>
+					</prop>
+					<prop oor:name="MergePoint" oor:type="xs:string">
+						<value>.uno:PickList\.uno:SaveAs</value>
+					</prop>
+					<prop oor:name="MergeCommand" oor:type="xs:string">
+						<value>AddAfter</value>
+					</prop>
+					<node oor:name="MenuItems">
+						<node oor:name="N002" oor:op="replace">
+							<prop oor:name="Title" oor:type="xs:string">
+								<value xml:lang="en">Save and Timestamp-backup</value>
+								<value xml:lang="hu">Mentés és időbélyeges archiválás</value>
+								<value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value> 
+								<value xml:lang="it">Salva e archivio con date e ora</value> 
+								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
+								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>             
+								<value xml:lang="fr">Sauvegarde horodatée</value>             
+							</prop>
+							<prop oor:name="URL" oor:type="xs:string">
+								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+						</node>
+						<node oor:name="N003" oor:op="replace">
+							<prop oor:name="Title">
+								<value xml:lang="en">Manage Backup files</value>
+								<value xml:lang="hu">Biztonségi mentések kezelése</value>
+								<value xml:lang="de">Backup-Dateien verwalten</value> 
+								<value xml:lang="it">Gestisci i file di backup</value> 
+								<value xml:lang="es">Administrar archivos de copia de seguridad</value>
+								<value xml:lang="ru">Управление резервными файлами</value>             
+								<value xml:lang="fr">Gérer les fichiers de sauvegarde</value>    
+							</prop>
+							<node oor:name="Submenu">
+								<node oor:name="S001" oor:op="replace">
+									<prop oor:name="Title">
+										<value xml:lang="en">Open</value>
+										<value xml:lang="hu">Megnyitás</value>
+										<value xml:lang="de">Öffnen</value> 
+										<value xml:lang="it">Aperto</value> 
+										<value xml:lang="es">Abierto</value>
+										<value xml:lang="ru">Открыть</value>             
+										<value xml:lang="fr">Ouvrir</value>    
+									</prop>
+									<prop oor:name="URL">
+								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.LoadBackupFile?language=Basic&amp;location=application</value>
+									</prop>
+									<prop oor:name="Target" oor:type="xs:string">
+										<value>_self</value>
+									</prop>
+								</node>
+								<node oor:name="S002" oor:op="replace">
+									<prop oor:name="Title">
+										<value xml:lang="en">Delete</value>
+										<value xml:lang="hu">Törlés</value>
+										<value xml:lang="de">Löschen</value> 
+										<value xml:lang="it">Elimina</value> 
+										<value xml:lang="es">Borrar</value>
+										<value xml:lang="ru">Удалить</value>             
+										<value xml:lang="fr">Supprimer</value>      
+									</prop>
+									<prop oor:name="URL" oor:type="xs:string">
+								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.DeleteBackupFile?language=Basic&amp;location=application</value>
+									</prop>
+									<prop oor:name="Target" oor:type="xs:string">
+										<value>_self</value>
+									</prop>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node oor:name="OfficeToolbarMerging">
+			<node oor:name="TimeStampBackup.ToolbarEntry" oor:op="replace">
+				<node oor:name="T1" oor:op="replace">
+					<prop oor:name="MergeToolBar">
+						<value>standardbar</value>
+					</prop>
+					<prop oor:name="MergePoint">
+						<value>.uno:SaveAs</value>
+					</prop>
+					<prop oor:name="MergeCommand">
+						<value>AddAfter</value>
+					</prop>
+					<prop oor:name="MergeFallback">
+						<value>AddLast</value>
+					</prop>
+					<node oor:name="ToolBarItems">
+						<node oor:name="m1" oor:op="replace">
+							<prop oor:name="Context" oor:type="xs:string">
+								<value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument,com.sun.star.formula.FormulaProperties,com.sun.star.text.WebDocument,com.sun.star.text.GlobalDocument</value>
+							</prop>
+							<prop oor:name="URL" oor:type="xs:string">
+								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
+							</prop>
+							<prop oor:name="ImageIdentifier" oor:type="xs:string">
+								<value>%origin%/icons/timeStampBackup</value>
+							</prop>
+							<prop oor:name="Title" oor:type="xs:string">
+								<value xml:lang="en">Save and Timestamp-backup</value>
+								<value xml:lang="hu">Mentés és időbélyeges archiválás</value>
+								<value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
+								<value xml:lang="it">Salva e archivio con date e ora</value> 
+								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
+								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
+								<value xml:lang="fr">Sauvegarde horodatée</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+						</node>
+					</node>
+				</node>
+				<node oor:name="T2" oor:op="replace">
+					<prop oor:name="MergeToolBar">
+						<value>toolbar</value>
+					</prop>
+					<prop oor:name="MergePoint">
+						<value>.uno:Save</value>
+					</prop>
+					<prop oor:name="MergeCommand">
+						<value>AddAfter</value>
+					</prop>
+					<prop oor:name="MergeFallback">
+						<value>AddLast</value>
+					</prop>
+					<node oor:name="ToolBarItems">
+						<node oor:name="m2" oor:op="replace">
+							<prop oor:name="Context" oor:type="xs:string">
+								<value>com.sun.star.sdb.OfficeDatabaseDocument</value>
+							</prop>
+							<prop oor:name="URL" oor:type="xs:string">
+								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
+							</prop>
+							<prop oor:name="ImageIdentifier" oor:type="xs:string">
+								<value>%origin%/icons/timeStampBackup</value>
+							</prop>
+							<prop oor:name="Title" oor:type="xs:string">
+								<value xml:lang="en">Save and Timestamp-backup</value>
+								<value xml:lang="hu">Mentés és időbélyeges archiválás</value>
+								<value xml:lang="de">Speichern, auch als Backup mit Zeitstempel</value>
+								<value xml:lang="it">Salva e archivio con date e ora</value> 
+								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
+								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
+								<value xml:lang="fr">Sauvegarde horodatée</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
 </oor:component-data>
