@@ -35,6 +35,7 @@ Function GetPickerTitle(sLocal as string) as string
 		Case &quot;es-ES&quot;: sResult = &quot;Administrar archivos de copia de seguridad&quot;
 		Case &quot;ru-RU&quot;: sResult = &quot;Управление резервными файлами&quot;
 		Case &quot;fr-FR&quot;: sResult = &quot;Gérer les fichiers de sauvegarde&quot;
+		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Zarządzaj plikami Backup&quot;
 		Case else: sResult = &quot;Manage Backup files&quot;
 	End Select
 GetPickerTitle = sResult
@@ -51,6 +52,7 @@ Function GetDelButtonLabel(sLocal as string) as string
 		Case &quot;es-ES&quot;: sResult = &quot;Borrar&quot;
 		Case &quot;ru-RU&quot;: sResult = &quot;Удалить&quot;
 		Case &quot;fr-FR&quot;: sResult = &quot;Supprimer&quot; &apos;Hagar Delest
+		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Usuń&quot;
 		Case else: sResult = &quot;Delete&quot;
 	End Select
 GetDelButtonLabel = sResult
@@ -67,6 +69,7 @@ Function GetLoadButtonLabel(sLocal as string) as string
 		Case &quot;es-ES&quot;: sResult = &quot;Abierto&quot;
 		Case &quot;ru-RU&quot;: sResult = &quot;Открыть&quot;
 		Case &quot;fr-FR&quot;: sResult = &quot;Ouvrir&quot;
+		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Otwórz&quot;
 		Case else: sResult = &quot;Open&quot;
 	End Select
 GetLoadButtonLabel = sResult
@@ -152,7 +155,18 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 5: sResult = &quot;Sauvegardes du mois précédent de ce document&quot;
 				Case 6: sResult = &quot;Sauvegardes d&apos;aujourd&apos;hui de ce document&quot;
 				Case 7: sResult = &quot;Sauvegardes d&apos;hier de ce document&quot;
-			end Select
+			end Select		
+		Case &quot;pl&quot;,&quot;PL&quot;
+			Select Case iFilterItem
+				Case 0: sResult = &quot;Wszystkie pliki Backup&quot;
+				Case 1: sResult = &quot;Dzisiejsze pliki Backup&quot;
+				Case 2: sResult = &quot;Wczorajsze pliki Backup&quot;
+				Case 3: sResult = &quot;Pliki Backup tego dokumentu&quot;
+				Case 4: sResult = &quot;Pliki Backup tego dokumentu z bieżącego miesiąca&quot; 
+				Case 5: sResult = &quot;Pliki Backup tego dokumentu z poprzedniego miesiąca&quot; 
+				Case 6: sResult = &quot;Dzisiejsze pliki Backup tego dokumentu&quot;
+				Case 7: sResult = &quot;Wczorajsze pliki Backup tego dokumentu&quot;
+			end Select				
 		Case else
 			Select Case iFilterItem
 				Case 0: sResult = &quot;All of Backup files&quot;
@@ -179,6 +193,7 @@ Function GetMsgBoxTitle(sLocal as string) as string
 		Case &quot;es-ES&quot;: sResult = &quot;Solicitud de confirmación&quot;
 		Case &quot;ru-RU&quot;: sResult = &quot;Запрос подтверждения:&quot;
 		Case &quot;fr-FR&quot;: sResult = &quot;Demande de confirmation:&quot;
+		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Żądanie potwierdzenia:&quot;
 		Case else: sResult = &quot;Confirmation request:&quot;
 	End Select
 GetMsgBoxTitle = sResult
@@ -195,6 +210,7 @@ Function GetMessage(sLocal as string) as string
 		Case &quot;es-ES&quot;: sResult = &quot;¿Seguro que quieres borrar el siguiente archivo?&quot;
 		Case &quot;ru-RU&quot;: sResult = &quot;Вы действительно хотите удалить следующий файл?&quot;
 		Case &quot;fr-FR&quot;: sResult = &quot;Êtes-vous sûr de vouloir supprimer le fichier suivant?&quot;
+		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Czy na pewno chcesz usunąć tę kopię zapasową? : &quot;
 		Case else: sResult = &quot;Are you sure you want to delete the following file?&quot;
 	End Select
 GetMessage = sResult
@@ -267,6 +283,7 @@ Sub ManageBackupFiles(sAction as string)
  Dim FPtype(0) As Integer
  Dim iToDo as integer
  Dim i as integer
+ Dim ile as integer
 
  Dim bFileHasURL as boolean
 
@@ -370,46 +387,37 @@ Sub ManageBackupFiles(sAction as string)
 	If oPicker.execute = com.sun.star.ui.dialogs.ExecutableDialogResults.OK Then
 		&apos;Xray oPicker
 		Select case sOfficeName
-			Case &quot;LibreOffice&quot;
-				For i = 0 to uBound(oPicker.SelectedFiles)
-					sTheFullPath = oPicker.SelectedFiles(i)
-					sTheURL = ConvertToURL(sTheFullPath)
-		
-					If FileExists(sTheURL) Then
-						Select Case sAction
-							Case &quot;Delete&quot;
-								sTitle = GetMsgBoxTitle(sLocale)
-								sMessage = GetMessage(sLocale)
-								sMessage = sMessage &amp; chr(10) &amp; chr(10) &amp; ConvertFromURL(sTheURL)
-								iToDo = MsgBox(sMessage, 36, sTitle)
-								If iToDo = 6 then Kill(sTheURL)
-							Case &quot;Open&quot;
-								StarDesktop.loadComponentFromURL(sTheURL, &quot;_blank&quot;, 0, Dummy)
-							Case else
-								Print &quot;Nothing to do...&quot;
-						End select
-					End If
-				Next i
-			Case &quot;OpenOffice&quot;
-				sTheFullPath = oPicker.Files(0)
-				sTheURL = ConvertToURL(sTheFullPath)
-				If FileExists(sTheURL) Then
-					Select Case sAction
-						Case &quot;Delete&quot;
-		 					sTitle = GetMsgBoxTitle(sLocale)
-			 				sMessage = GetMessage(sLocale)
-							sMessage = sMessage &amp; chr(10) &amp; chr(10) &amp; ConvertFromUrl(sTheURL)
-							iToDo = MsgBox(sMessage, 36, sTitle)
-			 				If iToDo = 6 then Kill(sTheURL)
-						Case &quot;Open&quot;
-							StarDesktop.loadComponentFromURL(sTheURL, &quot;_blank&quot;, 0, Dummy)
-						Case else
-							Print &quot;Nothing to do...&quot;
-					End select
-				End If
+			Case &quot;LibreOffice&quot;			
+				ile = uBound(oPicker.SelectedFiles)
+			Case &quot;OpenOffice&quot;		
+				ile = 0
 			Case else
 				Print &quot;Nothing to do...&quot;
+				exit sub
 		End Select
+		
+		For i = 0 to ile
+			if 	sOfficeName = &quot;LibreOffice&quot; then 
+				sTheFullPath = oPicker.SelectedFiles(i)
+			else
+				sTheFullPath = oPicker.Files(0)
+			endif
+			sTheURL = ConvertToURL(sTheFullPath)		
+			If FileExists(sTheURL) Then
+				Select Case sAction
+					Case &quot;Delete&quot;
+						sTitle = GetMsgBoxTitle(sLocale)
+						sMessage = GetMessage(sLocale)
+						sMessage = sMessage &amp; chr(10) &amp; chr(10) &amp; ConvertFromURL(sTheURL)
+						iToDo = MsgBox(sMessage, 36, sTitle)
+						If iToDo = 6 then Kill(sTheURL)
+					Case &quot;Open&quot;
+						StarDesktop.loadComponentFromURL(sTheURL, &quot;_blank&quot;, 0, Dummy)
+					Case else
+						Print &quot;Nothing to do...&quot;
+					End select
+			End If
+		Next i			
 	EndIf
 End Sub
 

@@ -22,7 +22,8 @@
 								<value xml:lang="it">Salva e archivio con date e ora</value> 
 								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
 								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>             
-								<value xml:lang="fr">Sauvegarde horodatée</value>             
+								<value xml:lang="fr">Sauvegarde horodatée</value>      
+								<value xml:lang="pl">Zapisz i utwórz plik kopii zapasowej</value>      
 							</prop>
 							<prop oor:name="URL" oor:type="xs:string">
 								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.timeStampBackup?language=Basic&amp;location=application</value>
@@ -40,6 +41,7 @@
 								<value xml:lang="es">Administrar archivos de copia de seguridad</value>
 								<value xml:lang="ru">Управление резервными файлами</value>             
 								<value xml:lang="fr">Gérer les fichiers de sauvegarde</value>    
+								<value xml:lang="pl">Zarządzaj plikami kopii zapasowej</value>
 							</prop>
 							<node oor:name="Submenu">
 								<node oor:name="S001" oor:op="replace">
@@ -50,7 +52,8 @@
 										<value xml:lang="it">Aperto</value> 
 										<value xml:lang="es">Abierto</value>
 										<value xml:lang="ru">Открыть</value>             
-										<value xml:lang="fr">Ouvrir</value>    
+										<value xml:lang="fr">Ouvrir</value>   
+ 										<value xml:lang="pl">Otwórz</value>
 									</prop>
 									<prop oor:name="URL">
 								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.LoadBackupFile?language=Basic&amp;location=application</value>
@@ -67,7 +70,8 @@
 										<value xml:lang="it">Elimina</value> 
 										<value xml:lang="es">Borrar</value>
 										<value xml:lang="ru">Удалить</value>             
-										<value xml:lang="fr">Supprimer</value>      
+										<value xml:lang="fr">Supprimer</value>  
+    										<value xml:lang="pl">Usuń</value>
 									</prop>
 									<prop oor:name="URL" oor:type="xs:string">
 								<value>vnd.sun.star.script:timeStampBackup.timeStampBackup.DeleteBackupFile?language=Basic&amp;location=application</value>
@@ -116,6 +120,7 @@
 								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
 								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
 								<value xml:lang="fr">Sauvegarde horodatée</value>
+								<value xml:lang="pl">Zapisz i utwórz plik kopii zapasowej ze znacznikiem czasowym</value>
 							</prop>
 							<prop oor:name="Target" oor:type="xs:string">
 								<value>_self</value>
@@ -155,6 +160,7 @@
 								<value xml:lang="es">Guardar y archivar con fecha y hora</value>
 								<value xml:lang="ru">Сохранение и архив с указанием даты и времени</value>
 								<value xml:lang="fr">Sauvegarde horodatée</value>
+								<value xml:lang="pl">Zapisz i utwórz plik kopii zapasowej</value>
 							</prop>
 							<prop oor:name="Target" oor:type="xs:string">
 								<value>_self</value>
