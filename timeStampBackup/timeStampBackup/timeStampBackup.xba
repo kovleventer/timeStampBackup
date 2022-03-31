@@ -28,13 +28,13 @@ Option Explicit
 Function GetPickerTitle(sLocal as string) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;: sResult = &quot;Manage Backup files&quot;
-		Case &quot;hu-HU&quot;: sResult = &quot;Biztonségi mentések kezelése&quot;
-		Case &quot;de-DE&quot;: sResult = &quot;Backup-Dateien verwalten&quot;
-		Case &quot;it-IT&quot;: sResult = &quot;Gestisci i file di backup&quot;
-		Case &quot;es-ES&quot;: sResult = &quot;Administrar archivos de copia de seguridad&quot;
-		Case &quot;ru-RU&quot;: sResult = &quot;Управление резервными файлами&quot;
-		Case &quot;fr-FR&quot;: sResult = &quot;Gérer les fichiers de sauvegarde&quot;
+		Case &quot;en&quot;,&quot;en-EN&quot;: sResult = &quot;Manage Backup files&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;: sResult = &quot;Biztonségi mentések kezelése&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;: sResult = &quot;Backup-Dateien verwalten&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;: sResult = &quot;Gestisci i file di backup&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;: sResult = &quot;Administrar archivos de copia de seguridad&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;: sResult = &quot;Управление резервными файлами&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;: sResult = &quot;Gérer les fichiers de sauvegarde&quot;
 		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Zarządzaj plikami Backup&quot;
 		Case else: sResult = &quot;Manage Backup files&quot;
 	End Select
@@ -45,13 +45,13 @@ End function
 Function GetDelButtonLabel(sLocal as string) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;: sResult = &quot;Delete&quot;
-		Case &quot;hu-HU&quot;: sResult = &quot;Törlés&quot;
-		Case &quot;de-DE&quot;: sResult = &quot;Löschen&quot;
-		Case &quot;it-IT&quot;: sResult = &quot;Elimina&quot;
-		Case &quot;es-ES&quot;: sResult = &quot;Borrar&quot;
-		Case &quot;ru-RU&quot;: sResult = &quot;Удалить&quot;
-		Case &quot;fr-FR&quot;: sResult = &quot;Supprimer&quot; &apos;Hagar Delest
+		Case &quot;en&quot;,&quot;en-EN&quot;: sResult = &quot;Delete&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;: sResult = &quot;Törlés&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;: sResult = &quot;Löschen&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;: sResult = &quot;Elimina&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;: sResult = &quot;Borrar&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;: sResult = &quot;Удалить&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;: sResult = &quot;Supprimer&quot; &apos;Hagar Delest
 		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Usuń&quot;
 		Case else: sResult = &quot;Delete&quot;
 	End Select
@@ -62,13 +62,13 @@ End function
 Function GetLoadButtonLabel(sLocal as string) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;: sResult = &quot;Open&quot;
-		Case &quot;hu-HU&quot;: sResult = &quot;Megnyitás&quot;
-		Case &quot;de-DE&quot;: sResult = &quot;Öffnen&quot;
-		Case &quot;it-IT&quot;: sResult = &quot;Aperto&quot;
-		Case &quot;es-ES&quot;: sResult = &quot;Abierto&quot;
-		Case &quot;ru-RU&quot;: sResult = &quot;Открыть&quot;
-		Case &quot;fr-FR&quot;: sResult = &quot;Ouvrir&quot;
+		Case &quot;en&quot;,&quot;en-EN&quot;: sResult = &quot;Open&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;: sResult = &quot;Megnyitás&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;: sResult = &quot;Öffnen&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;: sResult = &quot;Aperto&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;: sResult = &quot;Abierto&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;: sResult = &quot;Открыть&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;: sResult = &quot;Ouvrir&quot;
 		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Otwórz&quot;
 		Case else: sResult = &quot;Open&quot;
 	End Select
@@ -79,7 +79,7 @@ End function
 Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;, &quot;en-GB&quot;, &quot;en-US&quot;
+		Case &quot;en&quot;,&quot;en-EN&quot;, &quot;en-GB&quot;, &quot;en-US&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;All of Backup files&quot;
 				Case 1: sResult = &quot;Today&apos;s Backups of all documents&quot;
@@ -90,7 +90,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;Today&apos;s Backups of this document&quot;
 				Case 7: sResult = &quot;Yesterday&apos;s Backups of this document&quot;
 			end Select
-		Case &quot;hu-HU&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Az összes mentett fájl&quot;
 				Case 1: sResult = &quot;A mai összes mentett fájl&quot;
@@ -101,7 +101,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;Ennek a fájlnak a mai mentései&quot;
 				Case 7: sResult = &quot;Ennek a fájlnak a tegnapi mentései&quot;
 			end Select
-		Case &quot;de-DE&quot;, &quot;de-CH&quot;, &quot;de-AT&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;, &quot;de-CH&quot;, &quot;de-AT&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Alle Sicherungsdateien&quot;
 				Case 1: sResult = &quot;Die heutigen Backups aller Dokumente&quot; &apos;GerhardW
@@ -112,7 +112,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;Die heutigen Backups dieses Dokuments&quot;
 				Case 7: sResult = &quot;Die gestrigen Backups dieses Dokuments&quot;
 			end Select
-		Case &quot;it-IT&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Tutti i file di backup&quot;
 				Case 1: sResult = &quot;I backup di oggi di tutti i documenti&quot;
@@ -123,7 +123,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;I backup di oggi di questo documento&quot;
 				Case 7: sResult = &quot;I backup di ieri di questo documento&quot;
 			end Select
-		Case &quot;es-ES&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Todos los archivos de respaldo&quot;
 				Case 1: sResult = &quot;Copias de seguridad de todos los documentos de hoy&quot;
@@ -134,7 +134,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;Copias de seguridad de hoy de este documento&quot;
 				Case 4: sResult = &quot;Copias de seguridad de ayer de este documento&quot;
 			end Select
-		Case &quot;ru-RU&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Все файлы резервных копий&quot;
 				Case 1: sResult = &quot;Сегодняшние резервные копии всех документов&quot;
@@ -145,7 +145,7 @@ Function GetFilterItem(sLocal as string, iFilterItem as integer) as string
 				Case 6: sResult = &quot;Сегодняшние резервные копии этого документа&quot;
 				Case 7: sResult = &quot;Вчерашние резервные копии этого документа&quot;
 			end Select
-		Case &quot;fr-FR&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;
 			Select Case iFilterItem
 				Case 0: sResult = &quot;Tous les fichiers de sauvegarde&quot;
 				Case 1: sResult = &quot;Sauvegardes d&apos;aujourd&apos;hui de tous les documents&quot;
@@ -186,13 +186,13 @@ End function
 Function GetMsgBoxTitle(sLocal as string) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;: sResult = &quot;Confirmation request:&quot;
-		Case &quot;hu-HU&quot;: sResult = &quot;Megerősítés kérése:&quot;
-		Case &quot;de-DE&quot;: sResult = &quot;Bestätigungsanfrage:&quot;
-		Case &quot;it-IT&quot;: sResult = &quot;Richiesta di conferma:&quot;
-		Case &quot;es-ES&quot;: sResult = &quot;Solicitud de confirmación&quot;
-		Case &quot;ru-RU&quot;: sResult = &quot;Запрос подтверждения:&quot;
-		Case &quot;fr-FR&quot;: sResult = &quot;Demande de confirmation:&quot;
+		Case &quot;en&quot;,&quot;en-EN&quot;: sResult = &quot;Confirmation request:&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;: sResult = &quot;Megerősítés kérése:&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;: sResult = &quot;Bestätigungsanfrage:&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;: sResult = &quot;Richiesta di conferma:&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;: sResult = &quot;Solicitud de confirmación&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;: sResult = &quot;Запрос подтверждения:&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;: sResult = &quot;Demande de confirmation:&quot;
 		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Żądanie potwierdzenia:&quot;
 		Case else: sResult = &quot;Confirmation request:&quot;
 	End Select
@@ -203,13 +203,13 @@ End function
 Function GetMessage(sLocal as string) as string
  Dim sResult as string
 	Select Case sLocal
-		Case &quot;en-EN&quot;: sResult = &quot;Are you sure you want to delete the following file?&quot;
-		Case &quot;hu-HU&quot;: sResult = &quot;Biztosan törölni kívánja az alábbi fájlt?&quot;
-		Case &quot;de-DE&quot;: sResult = &quot;Möchten Sie die folgende Datei wirklich löschen?&quot;
-		Case &quot;it-IT&quot;: sResult = &quot;Sei sicuro di voler eliminare il seguente file?&quot;
-		Case &quot;es-ES&quot;: sResult = &quot;¿Seguro que quieres borrar el siguiente archivo?&quot;
-		Case &quot;ru-RU&quot;: sResult = &quot;Вы действительно хотите удалить следующий файл?&quot;
-		Case &quot;fr-FR&quot;: sResult = &quot;Êtes-vous sûr de vouloir supprimer le fichier suivant?&quot;
+		Case &quot;en&quot;,&quot;en-EN&quot;: sResult = &quot;Are you sure you want to delete the following file?&quot;
+		Case &quot;hu&quot;,&quot;hu-HU&quot;: sResult = &quot;Biztosan törölni kívánja az alábbi fájlt?&quot;
+		Case &quot;de&quot;,&quot;de-DE&quot;: sResult = &quot;Möchten Sie die folgende Datei wirklich löschen?&quot;
+		Case &quot;it&quot;,&quot;it-IT&quot;: sResult = &quot;Sei sicuro di voler eliminare il seguente file?&quot;
+		Case &quot;es&quot;,&quot;es-ES&quot;: sResult = &quot;¿Seguro que quieres borrar el siguiente archivo?&quot;
+		Case &quot;ru&quot;,&quot;ru-RU&quot;: sResult = &quot;Вы действительно хотите удалить следующий файл?&quot;
+		Case &quot;fr&quot;,&quot;fr-FR&quot;: sResult = &quot;Êtes-vous sûr de vouloir supprimer le fichier suivant?&quot;
 		Case &quot;pl&quot;,&quot;PL&quot;: sResult = &quot;Czy na pewno chcesz usunąć tę kopię zapasową? : &quot;
 		Case else: sResult = &quot;Are you sure you want to delete the following file?&quot;
 	End Select
